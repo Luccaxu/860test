@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Map</title>
+    
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,600,0,0" />
+    
+  <script type="module" crossorigin src="./assets/index-35bdf15e.js"></script>
+  <link rel="stylesheet" href="./assets/index-d1df1625.css">
+</head>
+
+<body>
+    <div class="nav left">
+        <a id="introHref" href="./intro.html">
+            <button id="introBtn">
+                <span class="material-symbols-rounded mapIcon">
+                    map
+                </span>
+                <span class="introBtnText">INTRODUCTION</span>
+            </button>
+        </a>
+        <input id="searchBar" class="search" type="text" placeholder="Search in Paris Maps" />
+    </div>
+    <div class="nav right">
+        <div id="filter">
+            <button id="filterBtn">
+                <span class="material-symbols-rounded filterIcon">
+                    filter_list
+                </span>
+            </button>
+            <ul id="filterList">
+                <li class="filterItem">
+                    <span class="material-symbols-rounded filterItemIcon">
+                        restaurant
+                    </span>
+                    Restaurant
+                    <span class="hideFilterText">
+                        restaurant
+                    </span>
+                </li>
+                <li class="filterItem">
+                    <span class="material-symbols-rounded filterItemIcon">
+                        bed
+                    </span>
+                    Lodging
+                    <span class="hideFilterText">
+                        lodging
+                    </span>
+                </li>
+                <li class="filterItem">
+                    <span class="material-symbols-rounded filterItemIcon">
+                        local_mall
+                    </span>
+                    Shopping
+                    <span class="hideFilterText">
+                        shopping_mall
+                    </span>
+                </li>
+                <li class="filterItem">
+                    <span class="material-symbols-rounded filterItemIcon">
+                        castle
+                    </span>
+                    LandMark
+                    <span class="hideFilterText">
+                        tourist_attraction
+                    </span>
+                </li>
+                <li class="filterItem">
+                    <span class="material-symbols-rounded filterItemIcon">
+                        local_hospital
+                    </span>
+                    Hospital
+                    <span class="hideFilterText">
+                        hospital
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section id="map">
+        <gmp-map center="48.858341217041016,2.2944705486297607" zoom="14" map-id="DEMO_MrAP_ID">
+            <gmp-advanced-marker position="48.858341217041016,2.2944705486297607" title="My location">
+            </gmp-advanced-marker>
+        </gmp-map>
+    </section>
+    </div>
+</body>
+
+</html>
